@@ -77,3 +77,14 @@ ggplot(Japan.over.100_df, aes(x = Year)) +
   scale_y_continuous(labels = function(x) format(x, scientific = FALSE)) +
   scale_fill_manual(values = c("blue", "pink")) +
   theme_bw()
+  
+  japan.life.exp.gender <- read_excel("Japan_life_exp_gender.xlsx")
+plot(japan.life.exp.gender$Total,ylim = c(77.5,90),type = "l")
+lines(japan.life.exp.gender$Male)
+lines(japan.life.exp.gender$Female)
+
+
+japan.frt__ <- read_excel("jpn_fertility__.xlsx")
+plot(japan.frt__, type="l",main="Total fertility rate of Japan 1900-2020",col="blue",lwd=2,
+     )
+
