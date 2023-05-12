@@ -71,10 +71,10 @@ legend("bottomright",c("S.korea","Japan", "Taiwan","HongKong","start","end"),
 
 
 #expectancy of life at birth -e0- #----
-S.korea_e0 <- hmd.e0("KOR", "matteo.ferniani@studio.unibo.it", "HDMi123!")#2003
-Taiwan_e0 <- hmd.e0("TWN", "matteo.ferniani@studio.unibo.it", "HDMi123!") #1970
-Japan_e0 <- hmd.e0("JPN", "matteo.ferniani@studio.unibo.it", "HDMi123!")  #1947
-HongKong_e0 <- hmd.e0("HKG", "matteo.ferniani@studio.unibo.it", "HDMi123!") #1986
+S.korea_e0 <- hmd.e0("KOR", "email", "password")#2003
+Taiwan_e0 <- hmd.e0("TWN", "email", "password") #1970
+Japan_e0 <- hmd.e0("JPN", "email", "password")  #1947
+HongKong_e0 <- hmd.e0("HKG", "email", "password") #1986
 
 #female
 plot(Japan_e0[,1],xlim=c(1947,2020),ylim=c(50,90),col="blue",main="Life expectancy Female")
